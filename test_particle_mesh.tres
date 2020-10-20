@@ -1,0 +1,9 @@
+[gd_resource type="CubeMesh" load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_transparent = true
+vertex_color_use_as_albedo = true
+
+[resource]
+material = SubResource( 1 )
+size = Vector3( 0.5, 0.5, 0.5 )

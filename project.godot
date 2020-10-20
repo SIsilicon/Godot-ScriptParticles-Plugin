@@ -1,0 +1,67 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "",
+"class": "Particle2D",
+"language": "GDScript",
+"path": "res://addons/silicon.vfx.scripted_particles/particle_2d.gd"
+}, {
+"base": "",
+"class": "Particle3D",
+"language": "GDScript",
+"path": "res://addons/silicon.vfx.scripted_particles/particle_3d.gd"
+}, {
+"base": "Resource",
+"class": "ParticleScript",
+"language": "GDScript",
+"path": "res://addons/silicon.vfx.scripted_particles/particle_script.gd"
+}, {
+"base": "Spatial",
+"class": "ScriptParticles",
+"language": "GDScript",
+"path": "res://addons/silicon.vfx.scripted_particles/script_particles.gd"
+}, {
+"base": "ParticleScript",
+"class": "StandardParticleScript",
+"language": "GDScript",
+"path": "res://addons/silicon.vfx.scripted_particles/standard_particle_script.gd"
+} ]
+_global_script_class_icons={
+"Particle2D": "",
+"Particle3D": "",
+"ParticleScript": "res://addons/silicon.vfx.scripted_particles/particle_script.svg",
+"ScriptParticles": "res://addons/silicon.vfx.scripted_particles/script_particles.svg",
+"StandardParticleScript": "res://addons/silicon.vfx.scripted_particles/particle_script.svg"
+}
+
+[application]
+
+config/name="ScriptParticles Plugin"
+run/main_scene="res://test.tscn"
+config/icon="res://icon.png"
+config/version=1
+
+[autoload]
+
+DebugTime="*res://DebugTime.gd"
+DebugDraw="*res://addons/zylann.debug_draw/debug_draw.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "silicon.vfx.scripted_particles" )
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+threads/thread_model=2
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

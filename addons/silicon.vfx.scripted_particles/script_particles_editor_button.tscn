@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/silicon.vfx.scripted_particles/script_particles.svg" type="Texture" id=1]
+[ext_resource path="res://addons/silicon.vfx.scripted_particles/script_particles_editor_button.gd" type="Script" id=2]
+
+[node name="Test Button" type="MenuButton"]
+text = "ScriptParticles"
+icon = ExtResource( 1 )
+items = [ "Create Custom Script", null, 0, false, false, 0, 0, null, "", false, "", null, 0, false, false, 1, 0, null, "", true, "Restart", null, 0, false, false, 1, 0, null, "", false ]
+switch_on_hover = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
